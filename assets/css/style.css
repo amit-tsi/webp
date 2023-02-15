@@ -402,7 +402,12 @@ section {
 }
 
 .img-fluid {
-  max-width: 140%;
+  max-width: 130%;
+}
+@media(max-width:500px){
+  .clients-slider .img-fluid{
+    width:90%;
+  }
 }
 .hero h2 {
   color: #444444;
@@ -560,6 +565,20 @@ h1 {
   .phases {
     letter-spacing: 2.4vh;
     padding-left: 8%;
+  }
+  .process-phase{
+    padding-left: 2.3%;
+  padding-right: 2.3%;
+  }
+}
+@media (max-width: 530px) {
+  .phases {
+    letter-spacing: 1vh;
+    padding-left: 8%;
+  }
+  .process-phase{
+    padding-left: 3%;
+  padding-right: 3%;
   }
 }
 
@@ -1044,6 +1063,7 @@ h1 {
     transform: rotate(360deg);
   }
 }
+
 
 
 /*--------------------------------------------------------------

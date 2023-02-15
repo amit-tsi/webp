@@ -316,7 +316,7 @@ section {
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: url(../images/Check\ blocks\ bg.png) top center no-repeat;
   background-size: cover;
   border-bottom: 1px solid rgba(32, 33, 36, .1);
@@ -343,42 +343,65 @@ section {
   line-height: normal;
 }
 
-.call-box {
-  width: 60%;
-  height: 5%;
-  margin-left: 1px;
+.input-box {
+  display: flex;
+  margin-left: 2%;
+  border: 1px solid #03a8c6;
+  border-radius: 5px;
+  width: fit-content;
+  height: fit-content;
+  overflow: hidden;
   font-size: 20px;
 }
 
-.call-box input[type="text"] {
-  border: 1px solid #03a8c6;
-  border-left: none;
-  border-radius: 0px 5px 5px 0px;
-  max-height: 200%;
-  padding-left: 5px;
-  width: 60%;
+.input-box .prefix {
+  font-weight: 300;
+  color: #000;
 }
 
-.call-box input[type="text"]:focus {
+.input-box input {
+  flex-grow: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+}
 
+.input-box:focus-within {
   border: 1px solid #03a8c6;
-  border-left: none;
   letter-spacing: 3;
   outline: transparent;
-  border-radius: 0px 5px 5px 0px;
+  border-radius: 5px;
 }
-
-.call-box span {
-  width: auto;
-  color: black;
-  max-height: 200%;
-  padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 0px;
-  border: 1px solid #03a8c6;
-  border-radius: 5px 0px 0px 5px;
-  border-right: none;
-  line-height: normal;
+@media(max-width:370px){
+  .input-box {
+    display: flex;
+    margin-left: 2%;
+    border: 1px solid #03a8c6;
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+    font-size: 16px;
+  }
+  
+  .input-box .prefix {
+    font-weight: 200;
+    color: #000;
+  }
+  
+  .input-box input {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  
+  .input-box:focus-within {
+    border: 1px solid #03a8c6;
+    letter-spacing: 3;
+    outline: transparent;
+    border-radius: 5px;
+  }
 }
 
 .btn-read-more {

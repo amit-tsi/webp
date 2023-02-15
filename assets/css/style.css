@@ -573,7 +573,7 @@ h1 {
 }
 @media (max-width: 530px) {
   .phases {
-    letter-spacing: 1vh;
+    letter-spacing: .8vh;
     padding-left: 8%;
   }
   .process-phase{

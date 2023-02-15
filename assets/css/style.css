@@ -703,6 +703,7 @@ h1 {
 .services{
   color:#fff;
   background: url(../images/TSI\ bg.png) top center no-repeat fixed;
+  min-height: 100%;
 }
 .services .service-box {
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);

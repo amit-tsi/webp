@@ -72,7 +72,7 @@ section {
   visibility: hidden;
   opacity: 0;
   right: 15px;
-  bottom: 15px;
+  bottom: 70px;
   z-index: 99999;
   background: #4154f1;
   width: 40px;
@@ -319,12 +319,12 @@ section {
   min-height: 100vh;
   background: url(../images/Check\ blocks\ bg.png) top center no-repeat ;
   background-size: 100%;
-  border-bottom: 1px solid rgba(32, 33, 36, .1);
+  box-shadow: 0px 5px 25px rgb(65 84 241 / 30%)
   
 }
 
 .main-head {
-  margin-top: 3%;
+  margin-top: 6%;
   font-size: 3.5rem;
   line-height: 110%;
   color: #000;
@@ -340,6 +340,7 @@ section {
   font-weight: 600;
   padding-right: 10%;
   font-size: 18px;
+  text-align: justify;
   font-family: "Nunito", sans-serif;
   line-height: normal;
 }
@@ -347,17 +348,21 @@ section {
 .input-box {
   display: flex;
   margin-left: 2%;
+  height: 117%;
   border: 1px solid #03a8c6;
   border-radius: 5px;
   width: fit-content;
-  height: fit-content;
   overflow: hidden;
   font-size: 20px;
 }
 
 .input-box .prefix {
   font-weight: 300;
+  width: fit-content;
   color: #000;
+  line-height: 100%;
+  padding: 4%;
+  padding-top: 7%;
 }
 
 .input-box input {
@@ -404,7 +409,6 @@ section {
     border-radius: 5px;
   }
 }
-
 .btn-read-more {
   line-height: 0;
   padding: 15px 40px;
@@ -420,10 +424,11 @@ section {
   width: 200px;
   letter-spacing: 1px;
 }
-
 .btn-read-more:hover {
   background-color: #4154f1;
 }
+
+
 
 .img-fluid {
   max-width: 130%;
@@ -450,9 +455,23 @@ section {
   box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
 }
 
-.img-peace {
-  max-height: 80px;
-  max-width: 80px;
+.img-peace-b {
+  max-height: 70px;
+  max-width: 70px;
+  float: left;
+  margin-left: 15%;
+}
+.img-peac-r{
+  max-height: 90px;
+  max-width: 90px;
+  float: right;
+
+}
+
+@media(max-height:77px){
+  .img-peac-r{
+    margin-right: 15%;
+  }
 }
 
 .hero .btn-get-started i {
@@ -546,7 +565,7 @@ h1 {
 }
 .slider-key{
   background: #fff;
-  border-radius: 15px;
+  border-radius: 7px;
   box-shadow: 0px 2px 15px rgba(65, 84, 241, 0.4);
   padding-left: 5%;
   padding-right: 5%;
@@ -877,7 +896,7 @@ h1 {
   margin-top:3%;
   height: 600px;
   background: #e7f1ff;
-  border-radius: 50px
+  border-radius: 20px
 }
 @media (max-width:500){
   .contact-main .contact-tile{

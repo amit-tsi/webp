@@ -123,4 +123,73 @@ a {
     width:100%;
     padding-left: 2%;
     padding-right: 2%;
+    box-sizing: unset;
+}
+.sub-nav .active-nav {
+    color: black;
+    display: inline-block;
+    border-bottom: 5px solid #f00 !important;
+}
+/* Modal OTP Verification */
+.modal{
+    --mdb-modal-margin:150px;
+
+}
+.modal-content{
+    border-radius: 3px;
+}
+
+.modal-header {
+    display: block;
+    background: red;
+    border-radius: 3px;
+    color: WHITE;
+    height: 40px;
+    padding: 2%;
+}
+
+.modal-body{
+    color:#000;
+    text-align: center;
+    
+}
+
+.modal-body span{
+    font-size: 12px;;
+}
+.modal-body input[type=text], .modal-body input[type=text]:focus{
+    box-shadow: 5px 10px 8px #888888;
+}
+.my-btn{
+    background: #00b0f0;
+    color:white;
+    opacity: .8;
+    width:100%;
+}
+.ripple-surface{
+    width:100%;
+}
+.modal-body a{
+    color:blue;
+    font-size:12px;
+}
+.my-btn:hover,.my-btn:focus{
+    background: #00b0f0;
+    width:100%;
+    color:white;
+    opacity: 1;
+}
+.modal-dialog{
+    max-width: 300px;
+}
+.modal-content{
+    width: 90%;
+}
+
+
+/* Modal Congratulation Css */
+.check {
+    font-size: 50px;
+    color: #7fa53f !important;
+    text-align: center;
 }
